@@ -31,5 +31,6 @@ En este proyecto, he creado una presentación personal utilizando Jetpack Compos
 
 _¡Este proyecto es parte de mi viaje de aprendizaje en el desarrollo de aplicaciones móviles!_
 
-**Autor:** Jamiro Manriquez
+**Autor:** Jamiro Manriquez 
+
 **Email:** jamiro.devops@gmail.com
