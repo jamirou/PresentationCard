@@ -7,10 +7,16 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Email
+import androidx.compose.material.icons.rounded.Phone
+import androidx.compose.material.icons.rounded.Share
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -115,39 +121,76 @@ private fun PresentationCompose(
             verticalArrangement = Arrangement.Bottom,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text(
-                text = number,
-                fontWeight = FontWeight.Light,
-                color = Color(0xFFF5F5F5),
-                fontSize = 16.sp,
+            Row(
                 modifier = Modifier
                     .padding(top = 5.dp, bottom = 2.dp)
                     .fillMaxWidth()
                     .align(Alignment.CenterHorizontally),
-                textAlign = TextAlign.Center
-            )
-            Text(
-                text = media,
-                fontWeight = FontWeight.Light,
-                color = Color(0xFFF5F5F5),
-                fontSize = 16.sp,
+                horizontalArrangement = Arrangement.Start,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Icon(
+                    Icons.Rounded.Phone,
+                    contentDescription = null,
+                    tint = Color(0XFF3ddc84),
+                    modifier = Modifier.padding(start = 70.dp, end = 10.dp),
+
+                    )
+                Text(
+                    text = number,
+                    fontWeight = FontWeight.Light,
+                    color = Color(0xFFF5F5F5),
+                    fontSize = 16.sp,
+                    modifier = Modifier.padding(start = 4.dp),
+                    textAlign = TextAlign.Center
+                )
+            }
+            Row(
                 modifier = Modifier
                     .padding(top = 5.dp, bottom = 2.dp)
                     .fillMaxWidth()
                     .align(Alignment.CenterHorizontally),
-                textAlign = TextAlign.Center
-            )
-            Text(
-                text = email,
-                fontWeight = FontWeight.Light,
-                color = Color(0xFFF5F5F5),
-                fontSize = 16.sp,
+                horizontalArrangement = Arrangement.Start,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Icon(
+                    Icons.Rounded.Share,
+                    contentDescription = null,
+                    tint = Color(0XFF3ddc84),
+                    modifier = Modifier.padding(start = 70.dp, end = 10.dp),
+                    )
+                Text(
+                    text = media,
+                    fontWeight = FontWeight.Light,
+                    color = Color(0xFFF5F5F5),
+                    fontSize = 16.sp,
+                    modifier = Modifier.padding(start = 4.dp),
+                    textAlign = TextAlign.Center
+                )
+            }
+            Row(
                 modifier = Modifier
                     .padding(top = 5.dp, bottom = 2.dp)
                     .fillMaxWidth()
                     .align(Alignment.CenterHorizontally),
-                textAlign = TextAlign.Center
-            )
+                horizontalArrangement = Arrangement.Start,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Icon(
+                    Icons.Rounded.Email,
+                    contentDescription = null,
+                    tint = Color(0XFF3ddc84),
+                    modifier = Modifier.padding(start = 70.dp, end = 10.dp),
+                    )
+                Text(
+                    text = email,
+                    fontWeight = FontWeight.Light,
+                    color = Color(0xFFF5F5F5),
+                    fontSize = 16.sp,
+                    modifier = Modifier.padding(start = 4.dp),
+                    textAlign = TextAlign.Center
+                )
+            }
         }
     }
 }
