@@ -1,6 +1,6 @@
 # My Android Development Progress
 
-Este repositorio es parte de mi registro de progreso en el aprendizaje del desarrollo móvil. Aquí compartiré proyectos y codelabs que estoy realizando mientras estudio el desarrollo de aplicaciones Android.
+Este repositorio es parte de mi registro de progreso en el aprendizaje del desarrollo móvil. Compartiré proyectos y codelabs que estoy realizando mientras estudio el desarrollo de aplicaciones Android.
 
 ## Proyecto: Presentación Personal
 
